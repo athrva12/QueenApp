@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SalonFragment.SalonSettingFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        tools:context=".Salon.SettingActivity">
+        <RelativeLayout
+            android:id="@+id/layout"
+            android:layout_below="@+id/imageview_appoinment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#1a1a00">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:text="Account"
+                android:layout_marginLeft="5dp"
+                android:textSize="18sp"
+                android:padding="5dp"
+                />
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/common_10_dp">
+            <TextView
+                android:id="@+id/textview_change_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:text="Change Password"
+                android:layout_margin="10dp"/>
+            <View
+
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000"
+
+                android:layout_below="@+id/layout4">
+
+            </View>
+            <TextView
+                android:id="@+id/textview_change_mobilenumbr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:text="Change Mobile Number"
+                android:layout_margin="10dp"/>
+            <View
+
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000"
+
+                android:layout_below="@+id/layout4">
+
+            </View>
+            <TextView
+                android:id="@+id/textview_delete_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:text="Delete Account"
+                android:layout_margin="10dp"/>
+            <View
+
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000"
+                android:layout_below="@+id/layout4">
+
+            </View>
+            <TextView
+                android:id="@+id/textview_change_language"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:text="Change Language"
+                android:layout_margin="10dp"/>
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000"
+                android:layout_below="@+id/layout4">
+
+            </View>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

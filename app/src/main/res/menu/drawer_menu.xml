@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Settings"
+        >
+        <menu>
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/request"
+            android:icon="@drawable/scissors3"
+            android:title="Request"
+
+            />
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/user3"
+            android:title="Profile" />
+        <item
+            android:id="@+id/nav_appointment"
+            android:icon="@drawable/appointments3"
+            android:title="Appointments" />
+        <item
+            android:id="@+id/nav_history"
+            android:icon="@drawable/history3"
+            android:title="History" />
+        <item
+            android:id="@+id/nav_setting"
+            android:icon="@drawable/settings3"
+            android:title="Setting"/>
+
+    </group>
+        </menu>
+    </item>
+    <item android:title="Information">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/privacy_policy"
+                    android:icon="@drawable/pp3"
+                    android:title="Privacy Policy"
+                    />
+                <item
+                    android:id="@+id/terms_and_conditions"
+                    android:icon="@drawable/tou3"
+                    android:title="Terms Of Use" />
+                <item
+                    android:id="@+id/nav_AboutUs"
+                    android:icon="@drawable/information3"
+                    android:title="About Us" />
+                <item
+                    android:id="@+id/nav_send_feedback"
+                    android:icon="@drawable/email3"
+                    android:title="Send Feedback" />
+                <item
+                    android:id="@+id/rateapp"
+                    android:icon="@drawable/star_gray3"
+                    android:title="Rate App"/>
+                <item
+                    android:id="@+id/tell_a_friend"
+                    android:icon="@drawable/share3"
+                    android:title="Tell A friend"/>
+
+
+            </group>
+            <item
+                android:title=" "/>
+            <item
+                android:title=" "/>
+
+            <item android:title="LogOut"
+                android:icon="@drawable/logout_mid2"
+                android:id="@+id/nav_logout_salon"
+                ></item>
+
+
+        </menu>
+    </item>
+
+</menu>

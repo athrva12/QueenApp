@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Customer.SalonConfirmationActivity">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Customer.SalonConfirmationActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        style="@style/HeaderBar"
+        android:elevation="4dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <TextView
+                android:id="@+id/toolbar_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Back"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/common_15_dp"
+                android:textColor="#fff"
+                />
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Querry"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textColor="#fff"
+                android:textStyle="bold"
+
+                android:textSize="20dp"
+                android:gravity="center"
+                />
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_below="@+id/my_toolbar"
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Date - Time"
+            android:textColor="#fff"
+            android:layout_margin="10dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            />
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/layout2"
+        android:layout_below="@+id/layout1"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date : "
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:layout_margin="20dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="11-11-2018"
+            android:textSize="17sp"
+            android:textColor="#000"
+            android:layout_margin="20dp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layout3"
+        android:layout_below="@+id/layout2"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time : "
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:layout_margin="20dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4:00PM"
+            android:textSize="17sp"
+            android:textColor="#000"
+            android:layout_margin="20dp"
+            />
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/layout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout3"
+        android:background="#000">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Upload a picture(Optional)"
+            android:textColor="#fff"
+            android:layout_margin="10dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            />
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/imageview_addmore_icon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/add"
+        android:layout_below="@+id/layout4"
+        android:layout_margin="15dp"/>
+    <RelativeLayout
+        android:id="@+id/layout5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageview_addmore_icon"
+        android:background="#000">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Services"
+            android:textColor="#fff"
+            android:layout_margin="10dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/layout6"
+        android:layout_below="@+id/layout5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:id="@+id/select_services_layout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hair Services"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:layout_margin="25dp"/>
+            <ImageView
+                android:id="@+id/tick1"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/common_10_dp"
+                android:visibility="gone"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/red_tick"/>
+        </RelativeLayout>
+                <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+                    android:background="#ff00"
+            android:layout_below="@+id/layout4">
+
+        </View>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layout7"
+        android:layout_below="@+id/layout6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/select_services_layout2"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nails Services"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:layout_margin="25dp"/>
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/common_10_dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:id="@+id/tick2"
+                android:visibility="gone"
+                android:src="@drawable/red_tick"/>
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#ff00"
+            android:layout_below="@+id/layout4">
+
+        </View>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layout8"
+        android:layout_below="@+id/layout7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:id="@+id/select_services_layout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  Face Services"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:layout_margin="25dp"/>
+            <ImageView
+                android:id="@+id/tick3"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_marginRight="@dimen/common_10_dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/red_tick"/>
+        </RelativeLayout>
+         <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#ff00"
+            android:layout_below="@+id/layout4">
+
+        </View>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layout9"
+        android:layout_below="@+id/layout8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:id="@+id/select_services_layout4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Body Services"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:layout_margin="25dp"/>
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:id="@+id/tick4"
+                android:visibility="gone"
+                android:layout_marginRight="@dimen/common_10_dp"
+                android:src="@drawable/red_tick"/>
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#ff00"
+            android:layout_below="@+id/layout4">
+
+        </View>
+
+    </LinearLayout>
+    <Button
+
+        android:layout_width="140dp"
+        android:layout_height="45dp"
+        android:text="Submit"
+        android:textColor="#fff"
+        android:id="@+id/submit_new_querry_submit"
+        android:background="@drawable/button_curved"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/layout9"
+        android:layout_margin="20dp"
+        android:layout_marginBottom="@dimen/common_10_dp"
+        android:layout_gravity="center"/>
+
+
+</RelativeLayout>
+</ScrollView>

@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Salon.ProfileActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        style="@style/HeaderBar"
+        android:elevation="4dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <TextView
+                android:id="@+id/toolbar_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Back"
+                android:drawableLeft="@drawable/back2"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/common_15_dp"
+                android:layout_marginRight="@dimen/common_2_dp"
+                android:textColor="#fff"
+                />
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Appointment Detail "
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textColor="#fff"
+                android:textStyle="bold"
+
+                android:textSize="20dp"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:id="@+id/toolbar_reserve"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reserve"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/common_15_dp"
+                android:layout_marginRight="@dimen/common_2_dp"
+                android:textColor="#fff"
+                />
+
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@id/my_toolbar">
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/user_profile_pic_salon"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:src="@color/colorPrimaryDark"
+                app:civ_border_color="#000"
+                app:civ_border_width="1dp"
+                android:layout_marginLeft="15dp"
+                />
+            <TextView
+                android:id="@+id/textview_salon_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Salon Test 1"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:layout_toEndOf="@+id/user_profile_pic_salon"
+                android:layout_toRightOf="@+id/user_profile_pic_salon"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="15dp"/>
+            <TextView
+                android:id="@+id/textview_salon_owner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bhakti Karva"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:layout_toEndOf="@+id/user_profile_pic_salon"
+                android:layout_toRightOf="@+id/user_profile_pic_salon"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/textview_salon_name"
+                android:paddingLeft="15dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="9479317092"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:layout_toEndOf="@+id/user_profile_pic_salon"
+                android:layout_toRightOf="@+id/user_profile_pic_salon"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="15dp"
+                android:layout_below="@+id/textview_salon_owner"/>
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#1a1a00">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:text="Address"
+                android:layout_marginLeft="5dp"
+                android:textSize="20sp"
+                android:padding="5dp"
+                />
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/textview_salon_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="address"
+                android:textColor="#000"
+                android:layout_margin="15dp"/>
+            <ImageView
+                android:id="@+id/imageview_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/pin"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#1a1a00">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:text="Pictures"
+                android:layout_marginLeft="5dp"
+                android:textSize="20sp"
+                android:padding="5dp"
+                />
+
+
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="90dp"
+                android:src="@color/colorPrimaryDark"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+
+                />
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="90dp"
+                android:src="@color/colorPrimaryDark"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="15dp"
+                />
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="90dp"
+                android:src="@color/colorPrimaryDark"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="15dp"
+                />
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="90dp"
+                android:src="@color/colorPrimaryDark"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="15dp"
+                />
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="90dp"
+                android:src="@color/colorPrimaryDark"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="15dp"
+                />
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#1a1a00">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:text="Services"
+                android:layout_marginLeft="5dp"
+                android:textSize="20sp"
+                android:padding="5dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edit"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:padding="5dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/textview_service_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Name : "
+                android:textColor="#000"
+                android:textSize="18sp"
+                />
+            <TextView
+                android:id="@+id/textview_service_name_symbol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Hair Wash"
+                android:layout_marginLeft="20dp"
+                android:paddingLeft="20dp"
+                android:layout_toEndOf="@+id/textview_service_name"
+                android:layout_toRightOf="@+id/textview_service_name"
+                android:textColor="#000"
+                android:textSize="18sp"
+                />
+            <TextView
+                android:id="@+id/textview_service_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Price : "
+
+                android:layout_below="@+id/textview_service_name"
+                android:textColor="#000"
+                android:textSize="18sp"
+                />
+            <TextView
+                android:id="@+id/textview_service_price_symbol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="1000"
+                android:layout_marginLeft="20dp"
+                android:paddingLeft="20dp"
+                android:layout_toEndOf="@+id/textview_service_name"
+                android:layout_toRightOf="@+id/textview_service_name"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:layout_below="@+id/textview_service_name_symbol"
+                />
+            <view
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@id/textview_service_price_symbol"></view>
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/textview_service_name2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Name : "
+                android:textColor="#000"
+                android:textSize="18sp"
+                />
+            <TextView
+                android:id="@+id/textview_service_name_symbol2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Hair Wash"
+                android:layout_marginLeft="20dp"
+                android:paddingLeft="20dp"
+                android:layout_toEndOf="@+id/textview_service_name2"
+                android:layout_toRightOf="@+id/textview_service_name2"
+                android:textColor="#000"
+                android:textSize="18sp"
+                />
+            <TextView
+                android:id="@+id/textview_service_price2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Price : "
+
+                android:layout_below="@+id/textview_service_name2"
+                android:textColor="#000"
+                android:textSize="18sp"
+                />
+            <TextView
+                android:id="@+id/textview_service_price_symbol2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="1000"
+                android:layout_marginLeft="20dp"
+                android:paddingLeft="20dp"
+                android:layout_toEndOf="@+id/textview_service_name2"
+                android:layout_toRightOf="@+id/textview_service_name2"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:layout_below="@+id/textview_service_name_symbol2"
+                />
+            <view
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@id/textview_service_price_symbol2">
+
+            </view>
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>

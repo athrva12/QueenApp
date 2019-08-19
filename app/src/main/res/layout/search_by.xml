@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/Loaction"
+        android:layout_width="match_parent"
+        android:textAlignment="center"
+        android:layout_height="wrap_content"
+        android:text="Location"
+        android:textSize="23dp"
+        android:layout_gravity="center"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#1a1a00"
+        android:layout_marginTop="2dp"
+        ></View>
+    <TextView
+        android:id="@+id/Services"
+        android:layout_width="match_parent"
+        android:textAlignment="center"
+        android:layout_height="wrap_content"
+        android:text="Services"
+        android:textSize="23dp"
+        android:layout_gravity="center"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#1a1a00"
+        android:layout_marginTop="2dp"
+        ></View>
+    <TextView
+        android:id="@+id/salon_name"
+        android:layout_width="match_parent"
+        android:textAlignment="center"
+        android:layout_height="wrap_content"
+        android:text="Salon Name"
+        android:textSize="23dp"
+        android:layout_gravity="center"
+        />
+
+</LinearLayout>

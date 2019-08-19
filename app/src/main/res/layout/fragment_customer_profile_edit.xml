@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CustomerFragment.CustomerProfileFragment">
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Customer.CustomerProfileActivity">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/customer_profile_pic_salon"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_margin="20dp"
+            android:src="@color/colorPrimaryDark"
+            app:civ_border_color="#000"
+            app:civ_border_width="1dp"
+            android:layout_centerHorizontal="true"
+            />
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/customer_profile_pic_salon"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:text="Name :  "
+                android:textSize="23sp"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:text="Mobile :  "
+                android:textSize="23sp"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:text="Email :  "
+                android:textSize="23sp"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:text="City :  "
+                android:textSize="23sp"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:text="Country :  "
+                android:textSize="23sp"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/layout"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:paddingRight="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/customer_profile_pic_salon"
+            android:orientation="vertical">
+            <EditText
+
+                android:id="@+id/customer_name"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="Test User 1"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="4dp"
+                android:inputType="textEmailAddress"
+                android:background="@drawable/edittext_curved"
+                />
+            <EditText
+
+                android:id="@+id/customer_mobileno_textview"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="9828326991"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="4dp"
+                android:inputType="textEmailAddress"
+                android:background="@drawable/edittext_curved"
+                />
+            <EditText
+
+                android:id="@+id/customer_email_textview"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="upadhyayathrva@gmail.com"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="4dp"
+                android:inputType="textEmailAddress"
+                android:background="@drawable/edittext_curved"
+                />
+            <EditText
+
+                android:id="@+id/customer_city_textview"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="Sultanpur,U.p."
+                android:layout_marginTop="10dp"
+                android:paddingLeft="4dp"
+                android:inputType="textEmailAddress"
+                android:background="@drawable/edittext_curved"
+                />
+            <EditText
+
+                android:id="@+id/customer_country_textview"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:hint="Email"
+                android:text="India"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="4dp"
+                android:inputType="textEmailAddress"
+                android:background="@drawable/edittext_curved"
+                />
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.captprice.queen">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".SelectLanguage"
+            android:label="Choose Language">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activity.ChooseUserActivity"
+            android:label="Choose User" />
+        <activity
+            android:name=".Activity.SignInActivity"
+            android:label="Sign In" />
+        <activity android:name=".Salon.NewRequestActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
+        <activity
+            android:name=".Salon.ProfileActivity"
+            android:label="Profile" />
+        <activity android:name=".Salon.AddressEditActivity" />
+        <activity android:name=".Salon.AddPicturesActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
+        <activity
+            android:name=".Salon.WorkingHoursActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity
+            android:name=".Salon.AddServicesActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity
+            android:name=".Salon.AppoinmentDetailsActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity android:name=".Salon.HistoryActivity" />
+        <activity
+            android:name=".Salon.FeedbackAppointmentDetails"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity android:name=".Salon.SettingActivity"
+            android:label="Settings"/>
+        <activity android:name=".Salon.OtpVarificationActivity" />
+        <activity android:name=".Customer.QueenActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
+        <activity android:name=".Customer.SalonConfirmationActivity" />
+        <activity android:name=".Customer.SearchActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
+        <activity android:name=".Customer.NewQueryActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
+        <activity android:name=".Customer.CustomerProfileActivity" />
+        <activity android:name=".Customer.FavouritesActivity" />
+        <activity android:name=".Customer.CustomerSalonViewActivity" />
+        <activity android:name=".Customer.AppointmentDetailsCustomer"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
+        <activity android:name=".Customer.CustomerSignUpActivity" />
+        <activity
+            android:name=".Salon.SaloonSignUpActivity"
+            android:label="Sign Up" />
+        <activity android:name=".Customer.CustomerHistory" />
+        <activity android:name=".Salon.AppointmentActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
+        <activity android:name=".Customer.CustomerFeedbackAppointmentDetails"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"></activity>
+    </application>
+
+</manifest>

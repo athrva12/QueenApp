@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#f5f5f0"
+    >
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+        <TextView
+            android:id="@+id/textview_custom_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_margin="@dimen/common_10_dp"
+            android:gravity="center_horizontal"
+            android:text="Service Name : "/>
+        <EditText
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:hint="Name"
+            android:paddingLeft="4dp"
+            android:layout_marginLeft="@dimen/common_10_dp"
+            android:layout_marginRight="@dimen/common_10_dp"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/edittext_curved"
+            />
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_margin="@dimen/common_10_dp"
+            android:gravity="center_horizontal"
+            android:text="Price : "/>
+        <EditText
+            android:id="@+id/price_edittext_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:hint="Price"
+            android:paddingLeft="4dp"
+            android:layout_marginLeft="@dimen/common_10_dp"
+            android:layout_marginRight="@dimen/common_10_dp"
+            android:inputType="number"
+            android:background="@drawable/edittext_curved"
+            />
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_margin="@dimen/common_10_dp"
+            android:gravity="center_horizontal"
+            android:text="No. Of Professional : "/>
+        <EditText
+            android:id="@+id/professional_edittext_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:hint="#"
+            android:paddingLeft="4dp"
+            android:layout_marginLeft="@dimen/common_10_dp"
+            android:layout_marginRight="@dimen/common_10_dp"
+            android:inputType="number"
+            android:background="@drawable/edittext_curved"
+            />
+        <Button
+            android:id="@+id/dialog_add_button"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Add"
+            android:textColor="#fff"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/common_10_dp"
+            android:background="@drawable/button_curved"
+            />
+
+
+    </LinearLayout>
+</RelativeLayout>

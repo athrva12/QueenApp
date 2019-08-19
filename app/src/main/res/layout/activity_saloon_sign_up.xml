@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    tools:context=".Customer.CustomerSignUpActivity">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    tools:context=".Customer.CustomerSignUpActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/edittext_signup_salon_name"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Salon Name"
+            android:layout_margin="5dp"
+
+            android:paddingLeft="4dp"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/edittext_curved"
+            />
+        <EditText
+            android:id="@+id/edittext_signup_email_salon"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Email"
+            android:layout_margin="@dimen/common_5_dp"
+
+            android:paddingLeft="4dp"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/edittext_curved"
+            />
+        <EditText
+            android:id="@+id/edittext_signup_salon_password"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Password"
+            android:layout_margin="@dimen/common_5_dp"
+            android:paddingLeft="4dp"
+            android:inputType="textPassword"
+            android:background="@drawable/edittext_curved"
+
+            />
+        <EditText
+            android:id="@+id/edittext_signup_salon_contact_person_name"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Contact Person Name"
+            android:layout_margin="@dimen/common_5_dp"
+            android:paddingLeft="4dp"
+
+            android:background="@drawable/edittext_curved"
+            />
+        <EditText
+            android:id="@+id/edittext_signup_salon_mobile"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Mobile"
+             android:layout_margin="@dimen/common_5_dp"
+            android:paddingLeft="4dp"
+            android:inputType="number"
+            android:background="@drawable/edittext_curved"
+            />
+        <EditText
+            android:id="@+id/edittext_signup_VAT_number"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="VAT number"
+            android:layout_margin="@dimen/common_5_dp"
+            android:paddingLeft="4dp"
+            android:inputType="number"
+            android:background="@drawable/edittext_curved"
+            />
+
+        <EditText
+            android:id="@+id/edittext_signup_CR_number"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="CR number"
+             android:layout_margin="@dimen/common_5_dp"
+            android:paddingLeft="4dp"
+            android:inputType="number"
+            android:background="@drawable/edittext_curved"
+            />
+
+        <EditText
+            android:id="@+id/edittext_signup_salon_Address"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Address"
+            android:layout_margin="@dimen/common_5_dp"
+
+            android:paddingLeft="4dp"
+
+            android:background="@drawable/edittext_curved"
+            />
+
+        <EditText
+            android:id="@+id/edittext_signup_city_salon"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="City"
+            android:layout_margin="@dimen/common_5_dp"
+
+            android:paddingLeft="4dp"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/edittext_curved"
+            />
+
+        <EditText
+            android:id="@+id/edittext_signup_country_salon"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Country"
+            android:layout_margin="@dimen/common_5_dp"
+            android:paddingLeft="4dp"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/edittext_curved"
+            />
+        <Button
+            android:layout_width="140dp"
+            android:layout_height="45dp"
+            android:text="Sign Up"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="20dp"
+            android:textColor="#fff"
+            android:id="@+id/signup_button_salon"
+            android:background="@drawable/button_curved"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/existing_user_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already a user?Sign In"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="7dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+        />
+</RelativeLayout>
+</ScrollView>

@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Salon.AppoinmentDetailsActivity">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Salon.AppoinmentDetailsActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        style="@style/HeaderBar"
+        android:elevation="4dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <TextView
+                android:id="@+id/toolbar_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Back"
+                android:drawableLeft="@drawable/back2"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/common_15_dp"
+                android:layout_marginRight="@dimen/common_2_dp"
+                android:textColor="#fff"
+                />
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Appointment Detail "
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textColor="#fff"
+                android:textStyle="bold"
+
+                android:textSize="20dp"
+                android:gravity="center"
+                />
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+    <ImageView
+        android:id="@+id/imageview_appoinment"
+        android:layout_width="140dp"
+        android:layout_height="100dp"
+        android:src="@color/colorPrimary"
+        android:layout_below="@+id/my_toolbar"
+        android:layout_margin="20dp"
+
+        />
+    <LinearLayout
+        android:layout_below="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_toRightOf="@+id/imageview_appoinment">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date : "
+                android:textSize="22sp"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 11 Nov "
+                android:textSize="22sp"
+                android:textColor="#000"
+
+                android:layout_marginTop="20dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Time : "
+                android:textSize="22sp"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 04:00"
+                android:textSize="22sp"
+                android:textColor="#000"
+
+                android:layout_marginTop="20dp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/layout"
+        android:layout_below="@+id/imageview_appoinment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#1a1a00">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:text="User Details"
+            android:layout_marginLeft="5dp"
+            android:textSize="20sp"
+            android:padding="5dp"
+            />
+    </RelativeLayout>
+   <LinearLayout
+       android:id="@+id/layout2"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:layout_below="@+id/layout">
+       <de.hdodenhof.circleimageview.CircleImageView
+           android:id="@+id/user_profile_pic_salon"
+           android:layout_width="100dp"
+           android:layout_height="100dp"
+           android:layout_margin="20dp"
+           android:src="@color/colorPrimaryDark"
+           app:civ_border_color="#000"
+           app:civ_border_width="1dp"
+           android:layout_below="@+id/layout"
+           />
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="User : "
+           android:textSize="22sp"
+           android:textColor="#000"
+           android:textStyle="bold"
+           android:layout_marginTop="20dp"
+           />
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Test User 1"
+           android:textSize="22sp"
+           android:textColor="#000"
+           android:layout_marginTop="20dp"
+           />
+   </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/layout3"
+        android:layout_below="@+id/layout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#1a1a00">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:text="Services"
+            android:layout_marginLeft="5dp"
+            android:textSize="20sp"
+            android:padding="5dp"
+            />
+    </RelativeLayout>
+     <LinearLayout
+         android:id="@+id/layout4"
+         android:layout_below="@+id/layout3"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="vertical">
+         <LinearLayout
+             android:layout_marginLeft="20dp"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal">
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="Name  :    "
+                 android:textSize="22sp"
+                 android:textColor="#000"
+                 android:textStyle="bold"
+                 android:layout_marginTop="20dp"
+                 />
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text=" Manicure"
+                 android:textSize="22sp"
+                 android:textColor="#000"
+                 android:layout_marginLeft="20dp"
+                 android:paddingLeft="20dp"
+                 android:layout_marginTop="20dp"
+                 />
+
+         </LinearLayout>
+         <LinearLayout
+             android:layout_marginLeft="20dp"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal">
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="Price :      "
+                 android:textSize="22sp"
+                 android:textColor="#000"
+                 android:textStyle="bold"
+                 android:layout_marginTop="20dp"
+                 />
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text=" 100 Rs"
+                 android:textSize="22sp"
+                 android:textColor="#000"
+                 android:layout_marginLeft="20dp"
+                 android:paddingLeft="20dp"
+                 android:layout_marginTop="20dp"
+                 />
+
+         </LinearLayout>
+     </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/layout4"
+        android:background="#000">
+
+    </View>
+    <LinearLayout
+        android:id="@+id/layout5"
+        android:layout_below="@+id/layout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name  :    "
+                android:textSize="22sp"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Eyebrows"
+                android:textSize="22sp"
+                android:textColor="#000"
+                android:layout_marginLeft="20dp"
+                android:paddingLeft="20dp"
+                android:layout_marginTop="20dp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Price :      "
+                android:textSize="22sp"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 20 Rs"
+                android:textSize="22sp"
+                android:textColor="#000"
+                android:layout_marginLeft="20dp"
+                android:paddingLeft="20dp"
+                android:layout_marginTop="20dp"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/layout5"
+        android:background="#000">
+
+    </View>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel Appointment"
+        android:textSize="22sp"
+        android:layout_below="@id/view"
+        android:layout_alignParentBottom="true"
+        android:textColor="#ff00"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/common_30_dp"></TextView>
+
+</RelativeLayout>
+</ScrollView>

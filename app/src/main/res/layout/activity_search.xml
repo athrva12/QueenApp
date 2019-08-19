@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Customer.SearchActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        style="@style/HeaderBar"
+        android:elevation="4dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <TextView
+                android:id="@+id/toolbar_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Back"
+                android:drawableLeft="@drawable/back2"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/common_15_dp"
+                android:layout_marginRight="@dimen/common_2_dp"
+                android:textColor="#fff"
+                />
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Search "
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textColor="#fff"
+                android:textStyle="bold"
+
+                android:textSize="20dp"
+                android:gravity="center"
+                />
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+    <TextView
+        android:id="@+id/textview_search_by"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search By:  "
+        android:layout_below="@+id/my_toolbar"
+        android:layout_margin="30dp"
+        android:textSize="20sp"
+        android:textColor="#000"/>
+    <TextView
+        android:id="@+id/textview_selct_one"
+        android:layout_width="wrap_content"
+        android:layout_toRightOf="@+id/textview_search_by"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/my_toolbar"
+        android:text="Select One  "
+        android:layout_marginTop="30dp"
+        android:textSize="17dp"
+        android:textColor="#000"/>
+    <ImageView
+        android:id="@+id/search_icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/search"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/my_toolbar"
+        android:layout_marginTop="35dp"
+        android:layout_marginRight="@dimen/common_5_dp"/>
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="70dp"
+       android:layout_below="@id/search_icon"
+       android:layout_centerVertical="true"
+       android:layout_marginTop="@dimen/common_20_dp"
+       android:layout_centerHorizontal="true"
+       >
+       <RelativeLayout
+           android:layout_width="wrap_content"
+           android:layout_height="match_parent"
+           android:layout_centerHorizontal="true">
+       <TextView
+           android:id="@+id/textview_listview"
+           android:layout_width="130dp"
+           android:layout_height="26dp"
+           android:text="List"
+           android:background="@drawable/textview_list"
+           android:layout_centerVertical="true"
+           android:textSize="@dimen/common_15_dp"
+           android:textAlignment="center"
+           android:layout_marginLeft="@dimen/common_20_dp"
+           />
+       <TextView
+           android:id="@+id/textview_map"
+           android:layout_width="130dp"
+           android:layout_height="26dp"
+           android:text="Map"
+           android:textColor="#fff"
+           android:background="@drawable/textview_map"
+           android:layout_centerVertical="true"
+           android:textSize="@dimen/common_15_dp"
+           android:layout_toRightOf="@+id/textview_listview"
+           android:textAlignment="center"
+           android:layout_marginTop="@dimen/common_20_dp"
+           />
+       </RelativeLayout>
+   </RelativeLayout>
+    <TextView
+        android:id="@+id/textview_not_sure"
+        android:layout_width="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Not Sure? Dont worry, submit a querry to all salons."
+        android:layout_above="@+id/submit_querry_button1"
+        android:textSize="15dp"
+        android:textColor="#000"/>
+    <Button
+
+        android:layout_width="140dp"
+        android:layout_height="45dp"
+        android:text="Submit QUERY"
+        android:textColor="#fff"
+        android:id="@+id/submit_querry_button1"
+        android:background="@drawable/button_curved"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:layout_gravity="center"/>
+
+
+</RelativeLayout>

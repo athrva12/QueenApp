@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Settings"
+        >
+        <menu>
+            <group android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/nav_profile"
+                    android:icon="@drawable/profile"
+                    android:title="Profile" />
+                <item
+                    android:id="@+id/nav_favourites"
+                    android:icon="@drawable/fav_small"
+                    android:title="Favourites" />
+                <item
+                    android:id="@+id/nav_appointment_history"
+                    android:icon="@drawable/history_small"
+                    android:title="Appontment History" />
+                <item
+                    android:id="@+id/nav_setting"
+                    android:icon="@drawable/settings_small"
+                    android:title="Setting"/>
+
+            </group>
+        </menu>
+    </item>
+    <item android:title="Information">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/privacy_policy"
+                    android:icon="@drawable/privacy_small"
+                    android:title="Privacy Policy"
+                    />
+                <item
+                    android:id="@+id/terms_and_conditions"
+                    android:icon="@drawable/terms_small"
+                    android:title="Terms Of Use" />
+                <item
+                    android:id="@+id/nav_AboutUs"
+                    android:icon="@drawable/aboutus_small"
+                    android:title="About Us" />
+                <item
+                    android:id="@+id/nav_send_feedback"
+                    android:icon="@drawable/email_small"
+                    android:title="Send Feedback" />
+                <item
+                    android:id="@+id/rateapp"
+                    android:icon="@drawable/rate_small"
+                    android:title="Rate App"/>
+                <item
+                    android:id="@+id/tell_a_friend"
+                    android:icon="@drawable/share_small"
+                    android:title="Tell A friend"/>
+
+
+            </group>
+            <item
+                android:title=" "/>
+            <item
+                android:title=" "/>
+
+            <item android:title="LogOut"
+                android:icon="@drawable/logout_mid2"
+                android:id="@+id/nav_logout"
+                >
+
+            </item>
+        </menu>
+    </item>
+
+</menu>

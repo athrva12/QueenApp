@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SalonFragment.SalonHistoryFragment">
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Salon.HistoryActivity"
+        android:id="@+id/relative_layoutf">
+        <ImageView
+            android:id="@+id/imageview_history_appointment"
+            android:layout_width="120dp"
+            android:layout_height="70dp"
+            android:layout_margin="20dp"
+            android:src="@color/colorPrimary"
+            />
+        <TextView
+            android:id="@+id/textview_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/imageview_history_appointment"
+            android:text="Test User 1"
+            android:textSize="17sp"
+            android:layout_marginTop="20dp"
+            android:textColor="#000"
+            />
+        <TextView
+            android:id="@+id/textview_appointment_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/imageview_history_appointment"
+            android:text="21 Oct - 10:30 AM"
+            android:textSize="17sp"
+            android:layout_marginTop="15dp"
+            android:textColor="#000"
+            android:layout_below="@+id/textview_username"
+
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/imageview_history_appointment"
+            android:background="#000">
+        </View>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=">"
+            android:textStyle="bold"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_below="@id/textview_username"
+            android:textSize="@dimen/common_20_dp"
+            />
+    </RelativeLayout>
+
+</FrameLayout>
